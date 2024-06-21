@@ -1,0 +1,57 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    color: #14171a;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#tweetForm, #signUpForm, #signInForm, #optionsForm {
+    margin-bottom: 20px;
+}
+
+    #tweetForm input,
+    #tweetForm textarea,
+    #signUpForm input,
+    #signUpForm textarea,
+    #signInForm input,
+    #signInForm textarea,
+    #optionsForm input,
+    #optionsForm textarea {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #tweetForm button,
+    #optionsForm button,
+    #signUpForm button,
+    #signInForm button {
+        padding: 10px 15px;
+        background-color: #1da1f2;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+#tweetsList .tweet {
+    border-bottom: 1px solid #e1e8ed;
+    padding: 10px 0;
+}
+
+    #tweetsList .tweet p {
+        margin: 0;
+    }
+
+    #tweetsList .tweet small {
+        color: #657786;
+    }

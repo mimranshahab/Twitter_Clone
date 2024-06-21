@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Twitter Clone</h1>        
+        <div id="signInForm">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button style="background-color:slategray" onclick="signIn()">Sign In</button>
+            <button style="background-color:slategray" onclick="signUp()">Sign Up</button>
+        </div>
+        <!--<div id="signUpForm" style="display:none;">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+        </div>-->
+
+        <div id="tweetForm" style="display:none;">
+            <textarea id="message" placeholder="What's happening? (max 140 chars)"></textarea>
+            <button onclick="postTweet()">Tweet</button>
+        </div>
+        <div id="tweets">
+            <h2>Recent Tweets</h2>
+            <div id="tweetsList"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

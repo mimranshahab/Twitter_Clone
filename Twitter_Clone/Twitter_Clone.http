@@ -1,0 +1,6 @@
+@Twitter_Clone_HostAddress = http://localhost:5063
+
+GET {{Twitter_Clone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
