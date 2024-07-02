@@ -26,11 +26,7 @@ namespace TwitterClone.API.Services
 
         public async Task<string> Authenticate(LoginModel model)
         {
-            // Validate the user credentials here (e.g., check the database)
-            var user = await _memberRepository.ValidateMemberAsync(model.Email, model.Password);   
-
-            // For the sake of example, we'll assume a user is always valid
-            //var user = await Task.FromResult(true); // Replace with actual user validation
+            var user = await _memberRepository.ValidateMemberAsync(model.Email, model.Password); 
 
             if (user == null)
                 return null;
@@ -52,14 +48,10 @@ namespace TwitterClone.API.Services
 
         public async Task<bool> Register(RegisterModel model)
         {
-            // Add user registration logic here (e.g., save to the database)
             var newUser = await _memberRepository.AddMemberAsync(model.Email,model.Password);
 
             if (newUser == null)
                 return false;
-
-            // For the sake of example, we'll assume registration is always successful
-            //return await Task.FromResult(true); // Replace with actual registration logic
 
             return true;
         }

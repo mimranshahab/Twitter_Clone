@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Twitter_Clone.API", "Twitter_Clone\Twitter_Clone.API.csproj", "{78297C0A-865E-46CA-BA07-15CC084C587A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClone.UI", "TwitterClone.UI\TwitterClone.UI.csproj", "{D0FDA6CC-587F-467A-A7A3-D5FD45E2CACA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterClone.UI", "TwitterClone.UI\TwitterClone.UI.csproj", "{D0FDA6CC-587F-467A-A7A3-D5FD45E2CACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClone.Tests", "TwitterClone.Tests\TwitterClone.Tests.csproj", "{F75336F3-9991-42F3-B64C-EC5219204233}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D0FDA6CC-587F-467A-A7A3-D5FD45E2CACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0FDA6CC-587F-467A-A7A3-D5FD45E2CACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0FDA6CC-587F-467A-A7A3-D5FD45E2CACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75336F3-9991-42F3-B64C-EC5219204233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75336F3-9991-42F3-B64C-EC5219204233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75336F3-9991-42F3-B64C-EC5219204233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75336F3-9991-42F3-B64C-EC5219204233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

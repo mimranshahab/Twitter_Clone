@@ -1,7 +1,9 @@
 ﻿document.addEventListener('DOMContentLoaded', fetchTweets);
 
 async function fetchTweets() {
-    const response = await fetch('https://localhost:7157/api/tweets');
+    const response = await fetch('https://localhost:7157/api/tweets', {
+        credentials: 'include' 
+    });
     const tweets = await response.json();
     const tweetsList = document.getElementById('tweetsList');
     tweetsList.innerHTML = '';
@@ -33,7 +35,8 @@ async function postTweet() {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ email, password }),
+        credentials: 'include' 
     });
     const member = await response.json();
     console.log("saved member", member);
@@ -65,7 +68,8 @@ async function CreateTweet(memb,msg) {
         headers: {
             'Content-Type': 'application/json' // Add other headers if necessary
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
+        credentials: 'include' 
     };
 
     await fetch(url, requestOptions)
@@ -95,7 +99,8 @@ async function signIn() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email, password })
+            body: JSON.stringify({ email, password }),
+            credentials: 'include' 
         });
         
         if (!response.ok) {
@@ -136,7 +141,8 @@ async function signUp() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email, password })
+            body: JSON.stringify({ email, password }),
+            credentials: 'include' 
         });
 
         if (!response.ok) {
